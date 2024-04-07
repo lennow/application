@@ -95,4 +95,4 @@ Frühester Eintrittstermin: 01.05.2024
 
 Arbeitszeitmodell: Teilzeit (max. 32 h / Woche), am liebsten 4-Tage-Woche  
 
-Gehaltsvorstellungen: 50.000 € Bruttojahresgehalt (bei Vollzeit, angepasst auf entsprechendes Teilzeitmodell)  
+Gehaltsvorstellungen: 48.000 € Bruttojahresgehalt (bei Vollzeit, angepasst auf entsprechendes Teilzeitmodell)  
