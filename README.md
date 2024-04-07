@@ -2,11 +2,11 @@
 
 ## Motivationsschreiben
 
-Mein Name ist Lena Lehmann und ich bin Eure neue Backendentwicklerin im Team - oder könnte es werden.  
-Nach vielen Jahren auf der Suche nach dem, was mich beruflich glücklich macht und mit Leidenschaft erfüllt, bin ich schließlich in der Webentwicklung angekommen. Vor sieben Jahren schloss ich mein Studium Webdesign & Development an der SAE Leipzig ab und programmiere seitdem mit Herz und Seele.  
-Zunächst habe ich einige Jahre lang als einzige Entwicklerin bei der Engelstein GmbH, einem kleinen StartUp in Leipzig, gearbeitet. Ich lernte dort sehr viel, das meiste autodidaktisch, und entwickelte unter anderem unseren Webshop für Gitarrenreinigungszubehör (<https://guitarstix.de/>).  
+Mein Name ist Lena Lehmann und ich bin eure neue Backendentwicklerin im Team - oder könnte es werden.  
+Nach vielen Jahren auf der Suche nach dem, was mich beruflich glücklich macht und mit Leidenschaft erfüllt, bin ich schließlich in der Webentwicklung angekommen.  
+Vor sieben Jahren schloss ich mein Studium Webdesign & Development an der SAE Leipzig ab. Danach habe ich einige Jahre lang als einzige Entwicklerin bei der Engelstein GmbH, einem kleinen StartUp in Leipzig, gearbeitet. Ich lernte dort sehr viel, das meiste autodidaktisch, und entwickelte unter anderem unseren Webshop für Gitarrenreinigungszubehör (<https://guitarstix.de/>) mit Hilfe des PHP Frameworks Laravel.  
 Als ich schließlich, mitten in der Pandemie, feststellen musste, dass ich mich allein nicht mehr weiterentwickeln kann, wechselte ich zur LeanERA GmbH. Der Start im Homeoffice, ein komplett neuer Tech Stack und die ungewohnte Arbeit im Team stellten mich vor viele Herausforderungen, die ich allesamt sehr gut und freudvoll gemeistert habe.  
-In den letzten drei Jahren arbeitete ich bei LeanERA als Fullstack Entwicklerin in verschiedenen Teams und Projekten. Dabei lernte ich nicht nur extrem viel über Frontend- und Backendentwicklung, sondern konnte auch nach und nach erkunden, welche Bereiche mir besonders liegen und wie ich am besten und am liebsten arbeite. Dabei hat sich besonders herauskristallisiert, dass ich meine Zukunft vor allem in der Backendentwicklung sehe. Die Konzeption und Entwicklung von API Modulen waren der Teil meiner Arbeit bei LeanERA, der mich am glücklichsten gemacht hat.  
+In den letzten drei Jahren arbeitete ich bei LeanERA als Fullstack Entwicklerin in verschiedenen Teams und Projekten. Dabei lernte ich nicht nur extrem viel über Frontend- und Backendentwicklung, sondern konnte auch nach und nach erkunden, welche Bereiche mir besonders liegen und wie ich am besten und am liebsten arbeite. Es hat sich im Laufe der Zeit besonders herauskristallisiert, dass ich meine Zukunft vor allem in der Backendentwicklung sehe. Die Konzeption und Entwicklung von API Modulen waren der Teil meiner Arbeit bei LeanERA, der mich am glücklichsten gemacht hat und mich bis heute am meisten begeistert und erfüllt.  
 Nun bin ich an dem Punkt angekommen, an dem ich Fullstack gern hinter mir lassen und als reine Backendentwicklerin weitermachen möchte. Bei der LeanERA GmbH ist das aus verschiedenen Gründen nicht möglich, weswegen ich mich jetzt beruflich wieder neu orientiere.
 
 ## Lebenslauf
@@ -89,4 +89,10 @@ Nun bin ich an dem Punkt angekommen, an dem ich Fullstack gern hinter mir lassen
 
 ## Wunschzettel - der (für mich) perfekte Job
 
-Ich möchte in einem Team arbeiten, das sich gegenseitig unterstützt und hilft, das weltoffen ist und bunt und mehr als die Summe seiner Teile. Ich möchte klar definierte Aufgaben in einem abgegrenzten Aufgabenbereich, in dem ich nach und nach eine gewisse Experitse aufbauen kann. Ich möchte mich weiterentwickeln, in meinem Tempo. Ich möchte als Mensch gesehen und behandelt werden und wünsche mir einen wertschätzenden und respektvollen Umgang miteinander im gesamten Arbeitsumfeld.
+Ich möchte in einem Team arbeiten, das sich gegenseitig unterstützt und hilft, das weltoffen ist und bunt und mehr als die Summe seiner Teile. Ich möchte klar definierte Aufgaben in einem abgegrenzten Aufgabenbereich, in dem ich nach und nach eine gewisse Experitse aufbauen kann. Ich möchte mich weiterentwickeln, in meinem Tempo. Ich möchte als Mensch gesehen und behandelt werden und wünsche mir einen wertschätzenden und respektvollen Umgang miteinander im gesamten Arbeitsumfeld.  
+
+Frühester Eintrittstermin: 01.05.2024  
+
+Arbeitszeitmodell: Teilzeit (max. 32 h / Woche), am liebsten 4-Tage-Woche  
+
+Gehaltsvorstellungen: 50.000 € Bruttojahresgehalt (bei Vollzeit, angepasst auf entsprechendes Teilzeitmodell)  

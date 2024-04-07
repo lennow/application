@@ -1,6 +1,6 @@
-import { Body, Controller, Get, Logger, Post } from '@nestjs/common';
+import { Body, Controller, Get, Logger, Param, Post } from '@nestjs/common';
 import { AppService } from './app.service';
-import { UserDataDto } from './dto/user-data.dto';
+import { UserDataDto } from './types/user-data.dto';
 
 @Controller()
 export class AppController {
@@ -13,5 +13,20 @@ export class AppController {
       'AppController:registerNewUser',
     );
     return this.appService.createUser(userData);
+  }
+
+  @Post()
+  loginUser(@Body() credentials: UserDataDto) {
+    Logger.debug(
+      `received event: ${JSON.stringify(credentials)}`,
+      'AppController:loginUser',
+    );
+    return this.appService.verifyUser(credentials);
+  }
+
+  @Get('/:id')
+  fetchUser(@Param('id') id: string) {
+    Logger.debug('AppController:fetchUser');
+    return this.appService.getUserById(id);
   }
 }
