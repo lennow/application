@@ -1,7 +1,11 @@
-import { Injectable, Logger } from '@nestjs/common';
-import { UserDataDto } from './types/user-data.dto';
+import { Injectable } from '@nestjs/common';
+import {
+  UserCredentialsDto,
+  UserDataDto,
+  UserDataUpdateBodyDto,
+} from './types/user-data.dto';
 import { UserResponse } from './types/user.interface';
-import { writeFileSync } from 'fs';
+import { writeFileSync, readdirSync, readFileSync } from 'fs';
 import v4 from 'uuid';
 
 @Injectable()
@@ -27,15 +31,72 @@ export class AppService {
     return { id: userId };
   }
 
-  async verifyUser(credentials): { id: string } {
-    // TODO: verify user, get userId
-    const userId = '';
+  verifyUser(credentials: UserCredentialsDto): { id: string } {
+    const getUserFromFile = readdirSync('./data').filter(
+      (file) =>
+        JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).email ===
+          credentials.email &&
+        JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).password ===
+          credentials.password,
+    );
+    const userId = JSON.parse(
+      readFileSync(`./data/${getUserFromFile}`, 'utf-8'),
+    ).id;
     return { id: userId };
   }
 
-  async getUserById(userId: string): Promise<UserResponse> {
-    Logger.log(`userId: ${userId}`, 'AppService:getUserById');
-    // TODO: fetch user from DB or bucket
-    return;
+  getUserById(userId: string): UserResponse {
+    const userDataFromFile = JSON.parse(
+      readFileSync(`./data/${userId}.json`, 'utf-8'),
+    );
+    const userDataResponse = {
+      id: userDataFromFile.id,
+      email: userDataFromFile.email,
+      firstName: userDataFromFile.firstName,
+      lastName: userDataFromFile.lastName,
+    };
+    return userDataResponse;
+  }
+
+  updateUserData(
+    userId: string,
+    userData: UserDataUpdateBodyDto,
+  ): { id: string } {
+    const userDataFromFile = JSON.parse(
+      readFileSync(`./data/${userId}.json`, 'utf-8'),
+    );
+    const updatedDataJson = JSON.stringify({
+      ...userDataFromFile,
+      firstName: userData.firstName ?? userDataFromFile.firstName,
+      lastName: userData.lastName ?? userDataFromFile.lastName,
+    });
+    writeFileSync(`./data/${userId}.json`, updatedDataJson);
+    return { id: userId };
+  }
+
+  createToken(email: string): string {
+    // create and save token for user with given email address
+  }
+
+  updateUserPassword(
+    userCredentials: UserCredentialsDto,
+    passwordResetToken: string,
+  ): { id: string } {
+    // check token & reset password
+
+    // const getUserByEmail = readdirSync('./data').filter(
+    //   (file) =>
+    //     JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).email ===
+    //       credentials.email &&
+    //     JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).password ===
+    //       credentials.password,
+    // );
+    // const updatedDataJson = JSON.stringify({
+    //   ...userDataFromFile,
+    //   firstName: userData.firstName ?? userDataFromFile.firstName,
+    //   lastName: userData.lastName ?? userDataFromFile.lastName,
+    // });
+    // writeFileSync(`./data/${userId}.json`, updatedDataJson);
+    // return { id: userId };
   }
 }
