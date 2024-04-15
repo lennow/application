@@ -1,6 +1,18 @@
-import { Body, Controller, Get, Logger, Param, Post, Put, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Logger,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { AppService } from './app.service';
-import { UserCredentialsDto, UserDataDto, UserDataUpdateBodyDto } from './types/user-data.dto';
+import {
+  UserCredentialsDto,
+  UserDataDto,
+  UserDataUpdateBodyDto,
+} from './types/user-data.dto';
 
 @Controller()
 export class AppController {
@@ -34,20 +46,5 @@ export class AppController {
   updateUser(@Param('id') id: string, @Body() userData: UserDataUpdateBodyDto) {
     Logger.debug('AppController:updateUser');
     return this.appService.updateUserData(id, userData);
-  }
-
-  @Put()
-  createPasswordResetToken(@Body() userEmail: string) {
-    Logger.debug('AppController:createPasswordResetToken');
-    return this.appService.createToken(userEmail);
-  }
-
-  @Put()
-  resetPassword(
-    @Body() userData: UserCredentialsDto,
-    @Query() passwordResetToken: string,
-  ) {
-    Logger.debug('AppController:resetPassword');
-    return this.appService.updateUserPassword(userData, passwordResetToken);
   }
 }

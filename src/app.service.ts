@@ -73,30 +73,4 @@ export class AppService {
     writeFileSync(`./data/${userId}.json`, updatedDataJson);
     return { id: userId };
   }
-
-  createToken(email: string): string {
-    // create and save token for user with given email address
-  }
-
-  updateUserPassword(
-    userCredentials: UserCredentialsDto,
-    passwordResetToken: string,
-  ): { id: string } {
-    // check token & reset password
-
-    // const getUserByEmail = readdirSync('./data').filter(
-    //   (file) =>
-    //     JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).email ===
-    //       credentials.email &&
-    //     JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).password ===
-    //       credentials.password,
-    // );
-    // const updatedDataJson = JSON.stringify({
-    //   ...userDataFromFile,
-    //   firstName: userData.firstName ?? userDataFromFile.firstName,
-    //   lastName: userData.lastName ?? userDataFromFile.lastName,
-    // });
-    // writeFileSync(`./data/${userId}.json`, updatedDataJson);
-    // return { id: userId };
-  }
 }
